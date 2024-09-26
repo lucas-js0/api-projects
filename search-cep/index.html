@@ -4,9 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <script type="module" src="/js/script.js"></script>
+    <main>
+      <section class="search-location">
+        <div class="search-hero container">
+          <div class="search-textbox">
+            <h1>Encontre o destino desejado dentro de alguns minutos.</h1>
+            <p>
+              Com essa ferramenta você pode encontrar rapidamente o CEP de um
+              endereço. Basta inserir o local desejado e obter o código postal,
+              bairro, cidade e estado de forma fácil e eficiente.
+            </p>
+          </div>
+
+          <div class="input-box">
+            <div>
+              <img class="search-icon" src="img/search.svg" alt="" />
+              <input class="input-pesquisar" type="text" placeholder="Pesquisar" />
+            </div>
+            <div>
+              <img class="local-icon" src="img/local.svg" alt="" />
+              <input class="input-local" type="text" placeholder="Local" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>

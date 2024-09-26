@@ -1,0 +1,68 @@
+.search-location {
+  background-color: #F2F4F6;
+}
+
+.search-textbox {
+  max-width: 800px;
+  margin-left: 50px;
+}
+
+.search-textbox h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  margin-bottom: 23px;
+  margin-top: 60px;
+  color: #0C0B0D;
+}
+
+.search-textbox p {
+  line-height: 1.3rem;
+  margin-bottom: 23px;
+  color: #66646B;
+}
+
+.input-box {
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+
+.local-icon, .search-icon {
+  position: absolute;
+  pointer-events: none; 
+}
+
+.local-icon {
+  top: 50%; 
+  left: 15px;
+  transform: translateY(-50%); 
+}
+
+.search-icon {
+  top: 50%; 
+  left: 15px;
+  transform: translateY(-50%); 
+}
+
+input {
+  padding: 32px 32px 32px 45px; 
+  width: 100%;
+  height: 50px; 
+  font-size: 16px; 
+  border: none;
+  outline: none;
+}
+
+.input-local {
+  border-radius: 0px 7px 7px 0px;
+}
+
+.input-pesquisar {
+  border-radius: 7px 0px 0px 7px;
+}
+
+.input-box > div {
+  position: relative; 
+  width: 100%;
+}
