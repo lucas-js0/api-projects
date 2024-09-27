@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,14 +26,38 @@
           </div>
 
           <div class="input-box">
-            <div>
+            <div class="input-father decoration">
               <img class="search-icon" src="img/search.svg" alt="" />
-              <input class="input-pesquisar" type="text" placeholder="Pesquisar" />
+              <input
+                class="input-pesquisar"
+                type="text"
+                placeholder="Busca por CEP"
+              />
             </div>
-            <div>
+            <div class="input-father">
               <img class="local-icon" src="img/local.svg" alt="" />
-              <input class="input-local" type="text" placeholder="Local" />
+              <input
+                class="input-local"
+                type="text"
+                placeholder="Busca por endereço"
+              />
+              <button class="buttonSearch">Search</button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container locations">
+        <div class="card">
+          <div class="logo-state-flex">
+            <img src="img/city.svg" alt="" />
+            <h2>São Paulo</h2>
+          </div>
+
+          <div class="card-boxinfos">
+            <h3>xxxxxxxxxxxxx</h3>
+            <p>xxxxxxxx</p>
+            <p>xxxxx</p>
           </div>
         </div>
       </section>

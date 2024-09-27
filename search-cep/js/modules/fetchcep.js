@@ -1,22 +1,20 @@
-// export default function initFetchCep() {
-//   const searchInput = document.getElementById('search')
-//   const searchButton = document.getElementById('searchButton')
+import createCards from './createCards.js'
 
-//   async function handleClickToFetchCEP() {
-//     try {
-//       const cep = searchInput.value
-//       const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
-//       const json = await response.json()
+export default function initFetchCep() {
+  const searchInput = document.querySelector('.input-pesquisar')
+  const searchButton = document.querySelector('.buttonSearch')
 
-//       addValues(json)
-//     } catch (error) {
-//       console.log('Um erro ocorreu.')
-//     }
-//   }
+  async function handleClickToFetchCEP() {
+    try {
+      const cep = searchInput.value
+      const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+      const json = await response.json()
 
-//   function addValues(json) {
-//     console.log(json.bairro)
-//   }
+      createCards(json)
+    } catch (error) {
+      console.log('Um erro ocorreu.', error)
+    }
+  }
 
-//   searchButton.addEventListener('click', handleClickToFetchCEP)
-// }
+  searchButton.addEventListener('click', handleClickToFetchCEP)
+}
